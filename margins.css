@@ -1,0 +1,54 @@
+.margins-bottom-title {
+    margin-bottom: -20px;
+}
+
+.margin-top-title {
+    margin-top: -45px;
+}
+
+.margin-yalkut-title-1 {
+    margin-bottom: -50px;
+    margin-top: -20px;
+}
+
+.margin-yalkut-title-2 {
+    margin-top: -40px;
+}
+
+/* medium changes */
+@media screen and (max-width: 900px) {   
+
+
+    .margins-bottom-title {
+        margin-bottom: -10px;
+    }
+    
+    .margin-top-title {
+        margin-top: -35px;
+    }
+
+
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* medium view 860 px */
+@media screen and (max-width: 860px){
+
+
+}
+
+/*  */
+/*  */
+/*  */
+/* mobile view */
+@media screen and (max-width: 390px) {
+    
+.margin-top-title {
+    margin-top: -25px;
+}
+
+}

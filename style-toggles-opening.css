@@ -1,0 +1,265 @@
+.big-metadata-icons label {
+    display: inline-block;
+    position: relative;
+    width: 200px; /* Set the fixed width */
+    height: 200px; /* Set the fixed height */
+    border: 2px solid #F2A2DD; /* Border styling */
+    border-radius: 100px; /* Rounded border */
+    overflow: hidden; /* Ensure content does not overflow */
+    padding:0;
+    margin: 0;
+}
+
+.big-metadata-icons label img {
+    width: 100%; 
+    height: 200px; /* Maintain aspect ratio */
+    padding: 20px;
+    /* transition: transform 0.3s ease-in-out;  */
+}
+
+.big-metadata-icons label img.small {
+    transform: scale(0.15); 
+    position: absolute;
+    left: 40%; 
+}
+
+.big-metadata-icons label.checked {
+    width: 400px; /* Doubled width when checked */
+    border-radius: 100px;
+    top: 20px;
+}
+
+/* toggles */
+/* toggle articles */
+input[type="checkbox"].toggle-articles, input[type="checkbox"].toggle-masses, input[type="checkbox"].toggle-lists, input[type="checkbox"].toggle-bids {
+    display: none;
+    cursor: pointer;
+}
+
+.list-content {
+    display: none;
+    gap: 20px;
+    position:relative;
+    top: -5em;
+    width: 300px;
+    padding-right:70px;
+    padding-left: 250px;
+    font-size: .85em;
+    display: none;
+    overflow: hidden;
+    transition: max-width 0.3s ease-in-out;
+    max-width: 0;
+}
+
+.list-content.active {
+    max-width: 100%; 
+}
+
+
+input[type="checkbox"].toggle-articles:checked ~ .list-content, input[type="checkbox"].toggle-masses:checked ~ .list-content, input[type="checkbox"].toggle-lists:checked ~ .list-content, input[type="checkbox"].toggle-bids:checked ~ .list-content {
+    display: block;
+}
+
+
+.list-content p {
+    margin: 0;
+    margin-bottom: 7px;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    font-family: narkiss-tam, sans-serif;
+    letter-spacing: normal;
+    font-size: 1.3rem;
+    width: 200px;
+}
+
+.list-content p > span {
+    font-size: 1rem;
+    display: block;
+    width: 200px;
+}
+
+
+.list-content span {
+    background-color: #F25C05; 
+    font-weight: 400;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* chatgpt changes 1107 */
+
+.big-metadata-icons label:hover img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(19%) saturate(800%) hue-rotate(51deg) brightness(95%) contrast(86%);
+}
+
+.big-metadata-icons .toggle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none;
+    font-family: narkiss-tam, sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: normal;
+
+}
+
+.big-metadata-icons label:hover .toggle-text {
+    opacity: 1;
+}
+
+.big-metadata-icons label:hover {
+    border-color: #F25C05; /* Change border color on hover */
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* mobile view */
+@media screen and (max-width: 900px) {
+    .big-metadata-icons label {
+        display: inline-block;
+        position: relative;
+        width: 90px; /* Set the fixed width */
+        height: 90px; /* Set the fixed height */
+        border: 2px solid #F2A2DD;
+        border-radius: 100px; /* Rounded border */
+        overflow: hidden;
+        padding:0;
+        margin: 0;
+    }
+    
+    .big-metadata-icons label img {
+        width: 100%;
+        height: 90px; 
+        padding: 10px;
+        /* transition: transform 0.3s ease-in-out;  */
+    }
+    
+    .big-metadata-icons label img.small {
+        transform: scale(0.15); /* Scale down the image */
+        position: absolute;
+        left: 40%; 
+        /* Center horizontally */
+    }
+    
+    .big-metadata-icons label.checked {
+        width: 120px; /* Doubled width when checked */
+        border-radius: 100px;
+    }
+    
+    /* toggles */
+    input[type="checkbox"].toggle-articles, input[type="checkbox"].toggle-masses, input[type="checkbox"].toggle-lists, input[type="checkbox"].toggle-bids {
+        display: none;
+        cursor: pointer;
+    }
+    
+    
+    .list-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-evenly;
+        position: relative;
+        top: -1em;
+        padding-left: 200px;
+        font-size: .85em;
+        display: none;
+        overflow: hidden;
+        transition: max-width 0.3s ease-in-out;
+        max-width: 0;
+    }
+    
+    .list-content.active {
+        max-width: 100%; 
+    }
+    
+    input[type="checkbox"].toggle-articles:checked ~ .list-content {
+        display: block;
+    }
+    
+    input[type="checkbox"].toggle-masses:checked ~ .list-content {
+        /* display: block; */
+        display: flex;
+        flex-direction: row;
+    }
+    
+    input[type="checkbox"].toggle-lists:checked ~ .list-content {
+        /* display: block; */
+        display: flex;
+        flex-direction: row;
+    }
+    
+    input[type="checkbox"].toggle-bids:checked ~ .list-content {
+        display: block;
+    }
+    
+    .list-content p {
+        margin: 0;
+        margin-bottom: 7px;
+        text-align: right;
+        display: flex;
+        gap: 10px;
+        font-family: narkiss-tam, sans-serif;
+        letter-spacing: normal;
+        font-size: 1.3rem;
+    }
+    
+    
+    .list-content p > span {
+        font-size: 1rem;
+    }
+    
+    .list-content span {
+        background-color: #F25C05; 
+        font-weight: 400;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    
+    /* chatgpt changes 1107 */
+    
+    .big-metadata-icons label:hover img {
+        filter: brightness(0) saturate(100%) invert(30%) sepia(19%) saturate(800%) hue-rotate(51deg) brightness(95%) contrast(86%);
+    }
+    
+    .big-metadata-icons .toggle-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        pointer-events: none;
+        font-family: narkiss-tam, sans-serif;
+        font-size: clamp(20px);
+        line-height: normal;
+        letter-spacing: normal;
+    
+    }
+    
+    .big-metadata-icons label:hover .toggle-text {
+        opacity: 1;
+    }
+    
+    .big-metadata-icons label:hover {
+        border-color: #F25C05; /* Change border color on hover */
+    }
+}

@@ -1,0 +1,979 @@
+#about {
+    display: flex;
+}
+
+#about-mobile {
+    display: none;
+}
+
+#item19-mobile {
+    display: none;
+}
+
+#item19-medium {
+    display: none;
+}
+
+#item19 {
+    display: flex;
+}
+
+#item26 {
+    display: flex;
+}
+
+#item26-mobile {
+    display: none;
+}
+
+#item26-medium {
+    display: none;
+}
+
+#item27 {
+    display: flex;
+}
+
+#item27-mobile {
+    display: none;
+}
+
+#item27-medium {
+    display: none;
+}
+
+#item46 {
+    display: flex;
+}
+
+#item46-mobile {
+    display: none;
+}
+
+#item46-medium {
+    display: none;
+}
+
+#item47 {
+    display: flex;
+}
+
+#item47-mobile {
+    display: none;
+}
+
+#item47-medium {
+    display: none;
+}
+
+#item50 {
+    display: flex;
+}
+
+#item50-mobile {
+    display: none;
+}
+
+#item50-medium {
+    display: none;
+}
+
+#item51 {
+    display: flex;
+}
+
+#item51-mobile {
+    display: none;
+}
+
+#item51-medium {
+    display: none;
+}
+
+
+#item60 {
+    display: flex;
+}
+
+#item60-mobile {
+    display: none;
+}
+
+#item60-medium {
+    display: none;
+}
+
+#item96 {
+    display: flex;
+}
+
+#item96-mobile {
+    display: none;
+}
+
+#item96-medium {
+    display: none;
+}
+
+
+#item107 {
+    display: flex;
+}
+
+#item107-mobile {
+    display: none;
+}
+
+#item107-medium {
+    display: none;
+}
+
+
+#item112 {
+    display: flex;
+}
+
+#item112-mobile {
+    display: none;
+}
+
+#item112-medium {
+    display: none;
+}
+
+
+#item119 {
+    display: flex;
+}
+
+#item119-mobile {
+    display: none;
+}
+
+#item119-medium {
+    display: none;
+}
+
+
+#item120 {
+    display: flex;
+}
+
+#item120-mobile {
+    display: none;
+}
+
+#item120-medium {
+    display: none;
+}
+
+
+#item126 {
+    display: flex;
+}
+
+#item126-mobile {
+    display: none;
+}
+
+#item126-medium {
+    display: none;
+}
+
+
+#item129 {
+    display: flex;
+}
+
+#item129-mobile {
+    display: none;
+}
+
+#item129-medium {
+    display: none;
+}
+
+
+#item134 {
+    display: flex;
+}
+
+#item134-mobile {
+    display: none;
+}
+
+#item134-medium {
+    display: none;
+}
+
+
+#item138 {
+    display: flex;
+}
+
+#item138-mobile {
+    display: none;
+}
+
+#item138-medium {
+    display: none;
+}
+
+
+#item142 {
+    display: flex;
+}
+
+#item142-mobile {
+    display: none;
+}
+
+#item142-medium {
+    display: none;
+}
+
+
+#item154 {
+    display: flex;
+}
+
+#item154-mobile {
+    display: none;
+}
+
+#item154-medium {
+    display: none;
+}
+
+
+#item161 {
+    display: flex;
+}
+
+#item161-mobile {
+    display: none;
+}
+
+#item161-medium {
+    display: none;
+}
+
+
+#item167 {
+    display: flex;
+}
+
+#item167-mobile {
+    display: none;
+}
+
+#item167-medium {
+    display: none;
+}
+
+
+#item169 {
+    display: flex;
+}
+
+#item169-mobile {
+    display: none;
+}
+
+#item169-medium {
+    display: none;
+}
+
+
+#item177 {
+    display: flex;
+}
+
+#item177-mobile {
+    display: none;
+}
+
+#item177-medium {
+    display: none;
+}
+
+#item203 {
+    display: flex;
+}
+
+#item203-mobile {
+    display: none;
+}
+
+#item203-medium {
+    display: none;
+}
+
+#item-liberty {
+    display: flex;
+}
+
+#item-liberty-mobile {
+    display: none;
+}
+
+#item-liberty-medium {
+    display: none;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* medium view 860 px */
+@media screen and (max-width: 860px){
+    
+    #item19-mobile {
+        display: none;
+    }
+    
+    #item19-medium {
+        display: flex;
+    }
+
+    #item19 {
+        display: none;
+    }
+    
+    #item26 {
+        display: none;
+    }
+    
+    #item26-mobile {
+        display: none;
+    }
+
+    #item26-medium {
+        display: flex;
+    }
+    
+    #item27 {
+        display: none;
+    }
+    
+    #item27-mobile {
+        display: none;
+    }
+
+    #item27-medium {
+        display: flex;
+    }
+    
+    #item46 {
+        display: none;
+    }
+    
+    #item46-mobile {
+        display: none;
+    }
+    
+    #item46-medium {
+        display: flex;
+    }
+
+    #item47 {
+        display: none;
+    }
+    
+    #item47-mobile {
+        display: none;
+    }
+    
+    #item47-medium {
+        display: flex;
+    }
+
+    #item50 {
+        display: none;
+    }
+    
+    #item50-mobile {
+        display: none;
+    }
+    
+    #item50-medium {
+        display: flex;
+    }
+
+    #item51 {
+        display: none;
+    }
+    
+    #item51-mobile {
+        display: none;
+    }
+    
+    #item51-medium {
+        display: flex;
+    }
+
+    #item60 {
+        display: none;
+    }
+    
+    #item60-mobile {
+        display: none;
+    }
+    
+    #item60-medium {
+        display: flex;
+    }
+    
+    #item96 {
+        display: none;
+    }
+    
+    #item96-mobile {
+        display: none;
+    }
+    
+    #item96-medium {
+        display: flex;
+    }
+    
+    #item107 {
+        display: none;
+    }
+    
+    #item107-mobile {
+        display: none;
+    }
+    
+    #item107-medium {
+        display: flex;
+    }
+    
+    #item112 {
+        display: none;
+    }
+    
+    #item112-mobile {
+        display: none;
+    }
+    
+    #item112-medium {
+        display: flex;
+    }
+    
+    #item119 {
+        display: none;
+    }
+    
+    #item119-mobile {
+        display: none;
+    }
+    
+    #item119-medium {
+        display: flex;
+    }
+    
+    
+    #item120 {
+        display: none;
+    }
+    
+    #item120-mobile {
+        display: none;
+    }
+    
+    #item120-medium {
+        display: flex;
+    }
+    
+    
+    #item126 {
+        display: none;
+    }
+    
+    #item126-mobile {
+        display: none;
+    }
+    
+    #item126-medium {
+        display: flex;
+    }
+    
+    
+    #item129 {
+        display: none;
+    }
+    
+    #item129-mobile {
+        display: none;
+    }
+    
+    #item129-medium {
+        display: flex;
+    }
+    
+    
+    #item134 {
+        display: none;
+    }
+    
+    #item134-mobile {
+        display: none;
+    }
+    
+    #item134-medium {
+        display: flex;
+    }
+    
+    
+    #item138 {
+        display: none;
+    }
+    
+    #item138-mobile {
+        display: none;
+    }
+    
+    #item138-medium {
+        display: flex;
+    }
+    
+    
+    #item142 {
+        display: none;
+    }
+    
+    #item142-mobile {
+        display: none;
+    }
+    
+    #item142-medium {
+        display: flex;
+    }
+    
+    
+    #item154 {
+        display: none;
+    }
+    
+    #item154-mobile {
+        display: none;
+    }
+    
+    #item154-medium {
+        display: flex;
+    }
+    
+    
+    #item161 {
+        display: none;
+    }
+    
+    #item161-mobile {
+        display: none;
+    }
+    
+    #item161-medium {
+        display: flex;
+    }
+    
+    
+    #item167 {
+        display: none;
+    }
+    
+    #item167-mobile {
+        display: none;
+    }
+    
+    #item167-medium {
+        display: flex;
+    }
+    
+    
+    #item169 {
+        display: none;
+    }
+    
+    #item169-mobile {
+        display: none;
+    }
+    
+    #item169-medium {
+        display: flex;
+    }
+    
+    
+    #item177 {
+        display: none;
+    }
+    
+    #item177-mobile {
+        display: none;
+    }
+    
+    #item177-medium {
+        display: flex;
+    }
+    
+    
+    #item203 {
+        display: none;
+    }
+    
+    #item203-mobile {
+        display: none;
+    }
+    
+    #item203-medium {
+        display: flex;
+    }
+    
+
+   
+    #item-liberty {
+        display: none;
+    }
+    
+    #item-liberty-mobile {
+        display: none;
+    }
+    
+    #item-liberty-medium {
+        display: flex;
+    }
+    
+
+
+}
+
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/* mobile view */
+@media screen and (max-width: 390px) {
+#about-mobile {
+    display: flex;
+}
+#about {
+    display: none;
+}
+#item19-mobile {
+    display: flex;
+}
+
+#item19-medium {
+    display: none;
+}
+
+#item19 {
+    display: none;
+}
+
+#item26 {
+    display: none;
+}
+
+#item26-mobile {
+    display: flex;
+}
+
+#item26-medium {
+    display: none;
+}
+
+
+#item27 {
+    display: none;
+}
+
+#item27-mobile {
+    display: flex;
+}
+
+#item27-medium {
+    display: none;
+}
+
+#item46-mobile {
+    display: flex;
+}
+
+#item46 {
+    display: none;
+}
+
+#item46-medium {
+    display: none;
+}
+
+#item47-mobile {
+    display: flex;
+}
+
+#item47 {
+    display: none;
+}
+
+#item47-medium {
+    display: none;
+}
+
+#item50-mobile {
+    display: flex;
+}
+
+#item50 {
+    display: none;
+}
+
+#item50-medium {
+    display: none;
+}
+
+#item51-mobile {
+    display: flex;
+}
+
+#item51 {
+    display: none;
+}
+
+#item51-medium {
+    display: none;
+}
+
+#item60 {
+    display: none;
+}
+
+#item60-mobile {
+    display: flex;
+}
+
+#item60-medium {
+    display: none;
+}
+
+#item96 {
+    display: none;
+}
+
+#item96-mobile {
+    display: flex;
+}
+
+#item96-medium {
+    display: none;
+}
+
+#item107 {
+    display: none;
+}
+
+#item107-mobile {
+    display: flex;
+}
+
+#item107-medium {
+    display: none;
+}
+
+#item112 {
+    display: none;
+}
+
+#item112-mobile {
+    display: flex;
+}
+
+#item112-medium {
+    display: none;
+}
+
+#item119 {
+    display: none;
+}
+
+#item119-mobile {
+    display: flex;
+}
+
+#item119-medium {
+    display: none;
+}
+
+
+#item120 {
+    display: none;
+}
+
+#item120-mobile {
+    display: flex;
+}
+
+#item120-medium {
+    display: none;
+}
+
+
+#item126 {
+    display: none;
+}
+
+#item126-mobile {
+    display: flex;
+}
+
+#item126-medium {
+    display: none;
+}
+
+
+#item129 {
+    display: none;
+}
+
+#item129-mobile {
+    display: flex;
+}
+
+#item129-medium {
+    display: none;
+}
+
+
+#item134 {
+    display: none;
+}
+
+#item134-mobile {
+    display: flex;
+}
+
+#item134-medium {
+    display: none;
+}
+
+
+#item138 {
+    display: none;
+}
+
+#item138-mobile {
+    display: flex;
+}
+
+#item138-medium {
+    display: none;
+}
+
+
+#item142 {
+    display: none;
+}
+
+#item142-mobile {
+    display: flex;
+}
+
+#item142-medium {
+    display: none;
+}
+
+
+#item154 {
+    display: none;
+}
+
+#item154-mobile {
+    display: flex;
+}
+
+#item154-medium {
+    display: none;
+}
+
+
+#item161 {
+    display: none;
+}
+
+#item161-mobile {
+    display: flex;
+}
+
+#item161-medium {
+    display: none;
+}
+
+
+#item167 {
+    display: none;
+}
+
+#item167-mobile {
+    display: flex;
+}
+
+#item167-medium {
+    display: none;
+}
+
+
+#item169 {
+    display: none;
+}
+
+#item169-mobile {
+    display: flex;
+}
+
+#item169-medium {
+    display: none;
+}
+
+
+#item177 {
+    display: none;
+}
+
+#item177-mobile {
+    display: flex;
+}
+
+#item177-medium {
+    display: none;
+}
+
+
+#item203 {
+    display: none;
+}
+
+#item203-mobile {
+    display: flex;
+}
+
+#item203-medium {
+    display: none;
+}
+
+#item-liberty {
+    display: none;
+}
+
+#item-liberty-mobile {
+    display: flex;
+}
+
+#item-liberty-medium {
+    display: none;
+}
+
+
+}

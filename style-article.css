@@ -1,0 +1,1048 @@
+*, *:before, *:after { 
+    box-sizing: border-box; /* Prevent padding from enlarging elements */
+    text-decoration: none;
+}
+
+* {
+    margin: 0; /* Remove extra margin from everything (body, headings, etc...) */
+}
+
+img {
+    max-width: 100%; /* Don't let images be more than their container's width */
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; /* Break long words in headings & paragraphs */
+}
+
+ul { /* Don't style unordered lists (good for nav menus!) */
+    padding: 0;
+    list-style: none;
+}
+
+a { /* No blue links! */
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+body {
+    font-family: narkiss-tam, sans-serif;
+    background-color: #475939;
+    color: #F2A2DD;
+}
+
+.site-wrapper {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #475939;
+    border: 2px solid #F2A2DD;
+    color: #F2A2DD;
+}
+
+::selection {
+    background-color: #F25C05;
+    color: #475939;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icons-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    /* margin-bottom: 100px; */
+}
+
+.icons-menu ul {
+    display: flex; 
+}
+
+.icons-menu li {
+    align-items: center; 
+    justify-content: center;
+}
+
+.content-article {
+    background-color: #475939;
+    color: #F2A2DD;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.icons-menu img {
+    width: 85px;
+    height: 85px;
+}
+
+.small-menu {
+    display: flex;
+}
+
+.small-menu-mobile {
+    display: none;
+}
+
+.small-menu-items {
+    display: flex; 
+    flex-direction: column;
+}
+
+.small-menu-items li:hover {
+    background: #F25C05;
+}
+
+.big-title {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#big-title-mobile {
+    display: none;
+}
+
+#big-title-desk {
+    display: flex;
+}
+
+.big-title-grid {
+    display: flex;
+}
+
+.big-title-grid-gap {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+
+.big-title-1st-row {
+    justify-content: center;
+    background-color: #F25C05;
+}
+
+.big-title-2nd-row {
+    justify-content: flex-end;
+    padding-left: 30px;
+}
+
+.big-title-3rd-row {
+    text-align: right;
+    background-color: #F25C05;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F25C05;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav img {
+    height: 40px;
+}
+
+
+.footer-menu img {
+    width: 100%; 
+    max-width: 50px;
+}
+
+.all-rights-reserved {
+   font-family: "NarkisRuttiMF", sans-serif;
+   font-size: 23vw;
+   letter-spacing: -0.067em;
+   padding: 10px;
+   line-height: 0.85;
+}
+
+.all-rights-reserved-icons {
+    width: 100%;
+    align-items: center;
+}
+
+.footer-menu-icon {
+    color: #F2A2DD;
+    width: 100%;
+    height: 60%;
+    align-content: center;
+}
+
+.footer-note.big-title.half-page {
+    justify-content: center;
+}
+
+.icon {
+    border: 2px solid #F2A2DD;
+    border-radius: 500px;
+    width: 100%;
+    height: 100%;
+    width: 170px;
+    align-content: center;
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 10px;
+}
+
+.articles-icon::after {
+    content: "\2736";
+    font-size: 40vw;
+}
+
+
+/* fonts */
+.running-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.big-title-font {
+    font-family: "NarkisRuttiMF", sans-serif;
+    font-size: 20vw;
+    text-align: center;
+    letter-spacing: -0.06em;
+}
+
+.about-big-font {
+    margin: 50px 0; 
+    padding: 0 50px; 
+    line-height: 10rem;
+    text-align: right;
+}
+
+.item-metadata {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2rem;
+    padding-top: 20px;
+}
+
+.item-running-text {
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.18rem;
+    word-spacing: .03rem;
+}
+
+.item-number {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+}
+
+.item-number-side-note {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+    margin-bottom: auto;
+}
+
+.talking-item {
+    background-color: #F25C05; 
+    padding: 0 50px; 
+}
+
+.talking-item > .side-note-intext {
+    background-color:#F2A2DD;
+    color:#F25C05;
+}
+
+.small-menu-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: .73em;
+    line-height: 1.6em;
+    letter-spacing: -.019em;
+}
+
+/* fonts */
+
+
+.author-name {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 0.06rem;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.item-no {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#abstract-mobile {
+    display: none;
+}
+
+#abstract {
+    display: flex;
+}
+
+#prologue {
+    display: flex;
+}
+
+#prologue-mobile {
+    display: none;
+}
+
+
+#article-content {
+    display: flex;
+}
+
+#article-content-mobile {
+    display: none;
+}
+
+#bibliography {
+    display: flex;
+}
+
+#bibliography-mobile {
+    display: none;
+}
+
+#about {
+    display: flex;
+}
+
+#about-mobile {
+    display: none;
+}
+
+.half-page {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+}
+
+.grid-column {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.half-column {
+    width: 8.33%;
+}
+
+.one-column {
+    width: 16.667%;
+}
+
+.one-and-half-columns {
+    width: 24.997%;
+}
+
+.two-columns {
+    width: 33.33%;
+}
+
+.two-and-half-columns {
+    width: 41.66%;
+}
+
+.three-columns {
+    width: 50%;
+}
+
+.three-and-half-columns {
+    width: 58.33%;
+}
+
+.four-columns {
+    width: 66.667%;
+}
+
+.four-and-half-columns {
+    width: 74.997%;
+}
+
+.five-columns {
+    width: 83.327%;
+}
+
+.five-and-half-columns {
+    width: 91.657%;
+}
+
+.side-note-div {
+    gap: 20px; 
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.side-note-column {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px;
+}
+
+.paragraph-subtitle-div {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    gap:20px;
+}
+
+.paragraph-subtitle-div > .small {
+    align-self: flex-end;
+}
+
+.subtitle { 
+    border: solid 2px #F2A2DD;
+    border-radius: 500px;
+    width:50%;
+    padding: 20px 20px 15px 20px;
+    margin: auto 0;
+    color:#F2A2DD;
+}
+
+.subtitle p {
+    font-size: clamp(20px, 3vw, 40px);
+    margin: auto;
+    /* line-height: 2rem; */
+}
+
+.big-metadata { 
+    align-self: center;
+    margin-bottom: auto;
+    font-size: clamp(20px, 3vw, 40px);
+    line-height: normal;
+}
+
+.side-note-mark {
+    text-align: center;
+    font-size: 6em;
+    padding-top: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #F25C05;
+}
+
+.side-note-intext {
+    background-color: #F25C05;
+    padding: 0 5px;
+    /* font-size: 0.5em; */
+}
+
+.grid-row p {
+    font-family: narkiss-tam, sans-serif; 
+    font-size: .6em;
+}
+
+.grid-row-number {
+    border: 2px solid #F2A2DD; 
+    border-radius: 100px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 2em;
+}
+
+.orange-background {
+    background-color: #F25C05;
+    color: #475939;
+    font-weight: 400;
+}
+
+.next-item {
+    padding: 0;
+    gap:5px;
+    overflow: hidden;
+}
+
+.next-item img {
+    width: 90%;
+    height: auto%;
+}
+
+.next-item-img-container {
+    margin-top: -180px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.icon-text {
+    font-size: 2vw;
+}
+
+.article-text {
+    text-indent: 22px;
+}
+
+.bibliography {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.big-name {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px; 
+    line-height: 2.4rem;
+    width: 40%;
+    text-align: left;
+}
+
+
+.big-name-english {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px; 
+    line-height: 2.5rem;
+    width: 40%;
+    direction: ltr;
+    text-align: right;
+}
+
+.bibliography-details {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+
+.bibliography-details-english {
+    width: 60%;
+    margin-bottom: 20px;
+    direction: ltr;
+}
+
+.bibliography-details a {
+    background-color: #475939;
+}
+
+.bibliography-details-english a {
+    background-color: #475939;
+}
+
+.footer-note {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+
+.item-no + #bibliography {
+    background-color: #F25C05;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-note-desk {
+    display: flex;
+}
+
+#footer-note-mobile {
+    display: none;
+}
+
+
+
+/* medium changes */
+@media screen and (max-width: 900px) {   
+
+    .all-rights-reserved {
+        font-size: 15vw;
+        line-height: normal;
+    }
+
+    .footer-menu-icon {
+        display: none;
+    }
+}
+
+
+/*  */
+/*  */
+/*  */
+/* mobile view */
+@media screen and (max-width: 390px) {
+    
+.site-wrapper {
+        background-color: #475939;
+        color: #F2A2DD;
+        padding-right: 0px;
+        padding-left: 0;
+        margin: 0;
+}
+    
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.icons-menu ul {
+    display: flex;
+}
+
+.icons-menu-list {
+    margin-bottom: 10px;
+    justify-content: flex-end;
+}
+
+.icons-menu li {
+    align-items: center; 
+    justify-content: center;
+}
+
+.content-article {
+    background-color: #475939;
+    color: #F2A2DD;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.small-menu {
+    display: none;
+}
+
+.small-menu-mobile {
+    display: flex;
+    margin-top: 115px;
+    position: absolute;
+    justify-content: flex-end;
+}
+
+.small-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 2px;
+}
+
+.small-menu-items li:hover {
+    background: #F25C05;
+}
+
+.big-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-title-grid {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.big-title-grid-gap {
+    gap: 10px;
+}
+
+#big-title-mobile {
+    display: flex;
+}
+
+#big-title-desk {
+    display: none;
+}
+
+.big-title-1st-row {
+    justify-content: center;
+}
+
+.big-title-2nd-row {
+    justify-content: flex-end;
+}
+
+
+/* fonts */
+.running-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.big-title-font {
+    font-family: "NarkisRuttiMF", sans-serif;
+    text-align: center;
+    letter-spacing: -0.035em;
+}
+
+.big-metadata { 
+    align-self: center;
+    margin-bottom: auto;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+.item-metadata {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1.2em;
+    line-height: 1rem;
+    padding-top: 20px;
+}
+
+.item-running-text {
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.18rem;
+    word-spacing: .03rem;
+}
+
+.item-number {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+}
+
+.small-menu-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: .73em;
+    line-height: 1.2em;
+    letter-spacing: -.019em;
+}
+
+/* fonts */
+
+.author-name {
+    font-family: narkiss-tam, sans-serif;
+    letter-spacing: 0.03rem;
+    padding-left: 30px;
+    padding-right:10px;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.item-no {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+#abstract-mobile {
+    display: flex;
+}
+
+#abstract {
+    display: none;
+}
+
+#prologue {
+    display: none;
+}
+
+#prologue-mobile {
+    display: flex;
+}
+
+
+#article-content {
+    display: none;
+}
+
+#article-content-mobile {
+    display: flex;
+}
+
+.article-text {
+    text-indent: 22px;
+    font-size: .8rem;
+    line-height: 0.9rem;
+}
+
+#bibliography {
+    display: none;
+}
+
+#bibliography-mobile {
+    display: flex;
+}
+
+#about {
+    display: none;
+}
+
+#about-mobile {
+    display: flex;
+}
+
+.half-page {
+    display: flex; 
+    flex-direction: row; 
+    gap: 10px;
+}
+
+.grid-column {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.side-note-mark {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 6em;
+    width: 50%;
+    height: 60%;
+    background-color: #F25C05;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row p {
+    font-family: narkiss-tam, sans-serif; 
+    font-size: .6em;
+}
+
+.subtitle { 
+    border: solid 2px #F2A2DD;
+    padding: 20px;
+    padding-top: 25px;
+    color:#F2A2DD;
+    width: 80%;
+}
+
+.subtitle p {
+    font-size: 1.3rem;
+}
+
+.orange-background {
+    background-color: #F25C05;
+    color: #475939;
+    font-weight: 400;
+}
+
+.side-note-column {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    font-size: ;
+    /* overflow: hidden; */
+}
+
+.item-number-side-note {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+}
+
+.side-note-div {
+    gap: 20px; 
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.side-note-text {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+    margin-bottom: auto;
+}
+
+
+.content-column-style {
+    padding:10px 20px;
+}
+
+
+.side-note-column-style {
+    gap: 20px;
+    padding-left: 10px;
+}
+
+
+.item-no + #bibliography-mobile {
+    background-color: #F25C05;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+
+.big-name {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px; 
+    line-height: 2rem;
+    width: 100%;
+    text-align: left;
+}
+
+
+.big-name-english {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px; 
+    line-height: 2rem;
+    width: 100%;
+    direction: ltr;
+    text-align: right;
+}
+
+.bibliography-details {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bibliography-details-english {
+    width: 100%;
+    margin-bottom: 20px;
+    direction: ltr;
+}
+
+
+.item-no + #about-mobile {
+    margin: 0; 
+    gap: 0px;
+}
+
+
+.next-item {
+    margin-top: -20px;
+    gap:5px;
+    overflow: hidden;
+}
+
+.next-item-img-container {
+    margin-top: -60px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.about-big-font {
+    margin: 0; 
+    padding: 0 20px; 
+    line-height: 3rem;
+    text-align: right;
+}
+
+#footer-note-desk {
+    display: none;
+}
+
+#footer-note-mobile {
+    display: flex;
+}
+
+.footer-note {
+    margin-top: 20px;
+}
+
+
+.footer {
+    display: flex;
+    background-color: #F25C05;
+    margin: 0;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+    align-self: flex-end;
+}
+
+
+.icon {
+    border: 2px solid #F2A2DD;
+    border-radius: 500px;
+    width: 100%;
+    height: 100%;
+    width: 60px;
+    align-content: center;
+    text-align: center;
+    font-size: 1.9em;
+}
+
+.all-rights-reserved {
+    font-family: "NarkisRuttiMF", sans-serif;
+    font-size: 23vw;
+    letter-spacing: -0.048em;
+    padding: 0 10px;
+    line-height: 0.85;
+}
+
+.all-rights-reserved-icons {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-note {
+    margin-top: 20px;
+}
+
+.icons-menu-opening-act {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding: 0 20px;
+}
+
+
+.footer-menu-icon {
+    color: #F2A2DD;
+    width: 100%;
+    height: 60px;
+    align-content: center;
+}
+
+.footer-menu-flex {
+    display:flex; 
+    flex-direction: row; 
+    gap: 5px; 
+    width: 100%;
+}
+
+}

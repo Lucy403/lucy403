@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הילקוט</title>
+    <link rel="stylesheet" href="style-yalkut.css">
+    <link rel="stylesheet" href="rotation-animation-yalkut-mobile.css">
+    <link rel="stylesheet" href="style-toggles-new.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qut3tib.css">
+    <link rel="shortcut icon" href="/imgs/star.svg" type="image/x-icon">
+     <script src="/script-new.js" defer></script>
+    <script src="https://kit.fontawesome.com/932708ed47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="header">
+            <div class="icons-menu">
+                <!-- small menu desktop -->
+                <div class="small-menu small-menu-text">
+                    <ul class="small-menu-items">
+                        <li>
+                            <a href="/about.html">
+                                אודות
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                כניסה לגיליון
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/past-volumes.html">
+                                גליונות קודמים
+                            </a>
+                        </li>
+                        <li>התקנת מאמר</li>
+                        <li>הפרוטוקולים</li>
+                        <li>
+                            <a href="/yalkut.html">
+                                הילקוט
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- icons menu -->
+                <ul class="icons-menu-list big-metadata-icons" id="icons-menu-desk">
+                    <li id="index-articles">
+                        <input type="checkbox" id="check-articles" class="toggle-articles">
+                        <label for="check-articles">
+                            <div class="icon-container">
+                                <img src="imgs/icons/pink/articles-icon.svg">
+                            </div>
+                            <span class="toggle-text">מאמרים</span>
+                        </label>
+                        <div class="list-content hidden">
+                            <p>
+                                <a href="/article-turn-off-the-lights.html">
+                                    שהאחרון יכבה את האור
+                                </a>
+                            </p>
+                            <p>
+                                <span>עידן פוקס טל בן צבי</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li id="index-masses">
+                        <input type="checkbox" id="check-masses" class="toggle-masses">
+                        <label for="check-masses">
+                            <div class="icon-container">
+                                <img src="imgs/icons/pink/masses-icon.svg">
+                            </div>
+                            <span class="toggle-text">מסות</span>
+                        </label>
+                        <div id="article-index-masses" class="list-content hidden">
+                            <div>
+                                <p>
+                                    הדרך
+                                </p>
+                                <p>
+                                    <span>גלילי שחר</span>
+                                </p>
+                            </div>
+                           <div>
+                            <p>
+                                <a href="/prefabricated-structure.html">
+                                    מבנה טרומי
+                                </a>
+                            </p>
+                            <p>
+                                <span>ידידיה גזבר</span>
+                            </p>
+                           </div>
+                            
+                        </div>
+                    </li>
+                    <li id="index-lists">
+                        <input type="checkbox" id="check-lists" class="toggle-lists">
+                        <label for="check-lists">
+                            <div class="icon-container">
+                                <img src="imgs/icons/pink/lists-icon.svg">
+                            </div>
+                            <span class="toggle-text">רשימות</span>
+                        </label>
+                        <div id="article-index-lists" class="hidden list-content">
+                            <div>
+                                <p>
+                                    <a href="/list-police.html">
+                                        משטרת ישר-אל הלב
+                                    </a> 
+                                </p>
+                                <p>
+                                    <span>
+                                        השוטרת אז-אולי
+                                    </span>  
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    נצרת, עיר הבשורה האקסטיביסטית
+                                </p>
+                                <p>
+                                    <span>
+                                        ח׳ולוד אבו אחמד
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="index-bids">
+                        <input type="checkbox" id="check-bids" class="toggle-bids">
+                        <label for="check-bids">
+                            <div class="icon-container">
+                                <img src="imgs/icons/pink/bids-icon.svg">
+                            </div>
+                            <span class="toggle-text">בדיונות</span>
+                        </label>
+                        <div id="article-index-bids" class="hidden list-content">
+                            <div>
+                                <p>
+                                    <a href="/bid.html">
+                                        בדיוניום
+                                    </a>
+                                </p>
+                                <p>
+                                    <span>שמעון אדף</span>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- small menu mobile -->
+                <div class="small-menu-mobile small-menu-text">
+                    <ul class="small-menu-items">
+                        <li>
+                            <a href="/about.html">
+                                אודות
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                כניסה לגיליון
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/past-volumes.html">
+                                גליונות קודמים
+                            </a>
+                        </li>
+                        <li>התקנת מאמר</li>
+                        <li>הפרוטוקולים</li>
+                        <li>
+                            <a href="/yalkut.html">
+                                הילקוט
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <!-- big title -->
+             <!-- dekstop -->
+            <div class="item-big-title" id="item-big-title-desk">
+                <div class="item-big-title-font">
+                   הילקוט
+                </div>
+                <div class="dept-list" style="justify-content: center;">
+                    <div class="metadata" style="text-align: left;">
+                        <div class="dept">
+                            אופנה
+                        </div>
+                        <div class="dept">
+                            אומנויות המסך
+                        </div>
+                        <div class="dept">
+                            אמנות
+                        </div>
+                        <div class="dept">
+                            ארכיטקטורה
+                        </div>
+                        <div class="dept">
+                            עיצוב
+                            תעשייתי
+                        </div>
+                    </div>
+                    <div class="item-big-title-font margin-yalkut-title-1">
+                        אסופת 
+                    </div>
+                </div>
+                
+                <div class="dept-list" style="margin: 0px 30px;">
+                    <div class="item-big-title-font">
+                        מאמרים
+                    </div>
+                    <div class="metadata" style="text-align: right; padding-left: 40px;">
+                        <div class="dept">
+                            צורפות
+                        </div>
+                        <div class="dept">
+                            צילום
+                        </div>
+                        <div class="dept">
+                            קארפט
+                        </div>
+                        <div class="dept">
+                            תקשורת חזותית
+                        </div>
+                        <div class="dept">
+                            <a href="/index.html">
+                                תרבות חזותית וחומרית
+                            </a>
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="item-big-title-font margin-yalkut-title-2">
+                    נבחרים
+                </div>
+            </div>
+
+            <!-- mobile -->
+            <div class="item-big-title" id="item-big-title-mobile">
+                <div class="item-big-title-font">
+                   הילקוט
+                </div>
+                <div class="dept-list" style="justify-content: center;">
+                    <div class="metadata">
+                        <div class="dept subtitle">
+                            אופנה
+                        </div>
+                        <div class="dept subtitle">
+                            צורפות
+                        </div>
+                        <div class="dept subtitle">
+                            אמנות
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dept-list" style="justify-content: center;">
+                    <div class="metadata">
+                        <div class="dept subtitle" style="width: 200px">
+                            אומנויות המסך
+                        </div>
+                        <div class="dept subtitle">
+                            ארכיטקטורה
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dept-list" style="justify-content: center;">
+                    <div class="metadata">
+                        <div class="dept subtitle">
+                            עיצוב
+                            תעשייתי
+                        </div>
+                        <div class="item-big-title-font">
+                            אסופת 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dept-list" style="margin: 0px 30px;">
+                    <div class="item-big-title-font">
+                        מאמרים
+                    </div>
+                    <div class="metadata">
+                        <div class="dept subtitle" style="width: 90px">
+                            צילום
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dept-list" style="margin: 0px 30px;">
+                    <div class="metadata">
+                        <div class="dept subtitle" style="width: 90px">
+                            צילום
+                        </div>
+                    </div>
+                    <div class="item-big-title-font">
+                        נבחרים
+                    </div>
+                </div>
+
+                <div class="dept-list" style="margin: 0px 30px;">
+                    <div class="metadata">
+                        <div class="dept subtitle">
+                            קראפט
+                        </div>
+                        <div class="dept subtitle" style="width:200px">
+                            תקשורת חזותית
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dept-list" style="margin: 0px 30px;">
+                    <div class="metadata">
+                        
+                        <div class="dept subtitle" style="width:200px">
+                            <a href="/index.html">
+                                תרבות חזותית וחומרית
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- subtitle -->
+             <!-- desktop -->
+            <div class="half-page" id="subtitle">
+                <div class="half-column"></div>
+                <div class="three-and-half-columns">
+                    <div class="big-metadata">
+                        אסופת הטקסטים של תרבות חזותית וחומרית מביאה לציבור הסטודנטים, החוקרים, האמנים, המעצבים והאדריכלים מאמרי מפתח בתחומים שונים של התרבות החזותית והחומרית.
+                    </div>
+                </div>
+                <div class="one-and-half-columns"></div>
+                <div class="half-column"></div>
+            </div>
+
+            <!-- mobile -->
+        
+                 <div class="half-page" id="subtitle-mobile">
+                     <div class="four-columns content-column-style">
+                         <div class="big-metadata">
+                             אסופת הטקסטים של תרבות חזותית וחומרית מביאה לציבור הסטודנטים, החוקרים, האמנים, המעצבים והאדריכלים מאמרי מפתח בתחומים שונים של התרבות החזותית והחומרית.
+                         </div>
+                     </div>
+                     <div class="two-columns"></div>
+                 </div>
+     
+                 <div class="half-page" id="subtitle-mobile2">
+                     <div class="two-columns"></div>
+                     <div class="four-columns">
+                         <div class="article-text" style="font-size: 0.75rem;">
+                             <p>
+                                 תחת שם כל מחלקה תוכלו למצוא רשימת טקסטים, ביוגרפיה קצרה של הכותבים (בעברית) ותקצירי הטקסטים (גם הם בעברית).
+                             </p>
+                         </div>
+                         <div class="article-text" style="font-size: 0.75rem; padding-left: 0px;">
+                             <p>
+                                 את הטקסטים עצמם ניתן לקבל בצורה דיגיטלית, או כעותק מודפס, במזכירות המחלקה לתרבות חזותית וחומרית.
+                             </p>
+                         </div>
+                     </div>
+                 </div>
+
+        
+            <!-- icons mobile -->
+             <div id="icons-mobile">
+                <div class="half-page icons-runner" style="width: 100%; overflow: hidden;">
+                    <div class="icons-runner-class" style="height: 300px; padding-left: 300px">
+                        <div class="icon-rotation grid-column">
+                            <img src="/imgs/icons/orange/articles-icon.svg" alt="Icon 1">
+                            <img src="/imgs/icons/orange/masses-icon.svg" alt="Icon 2">
+                            <img src="/imgs/icons/orange/lists-icon.svg" alt="Icon 3">
+                            <img src="/imgs/icons/orange/bids-icon.svg" alt="Icon 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- small text -->
+             <!-- desktop -->
+            <div class="half-page" id="small-text">
+                <div class="two-columns"></div>
+                <div class="three-and-half-columns">
+                    <div class="article-text" style="columns: 2; margin-top: 20px;">
+                        <p>
+                            ההחלטה ללקט, לקבץ ולערוך את הטקסטים של תרבות חזותית וחומרית נבעה מסיבה פשוטה: במהלך השנים מצאנו עצמנו מתלבטים לגבי מהותם וזהותם של טקסטים שעוסקים בתחומי הדעת המגוונים הנלמדים בבצלאל ושאותם כדאי שהן הסטודנטים והן המרצים יכירו. כך, הטקסטים שנבחרו מנסים להנגיש לקהילה הבצלאלית מִדגם של טקסטים חשובים לכל דיסציפלינה. אלו יכולים להוות בסיס לבניית גוף־ידע אישי, כמו גם לעורר ולייצר דיונים בכיתה ובסטודיו.
+                        </p>
+                        <br>
+                        <p>
+                            הטקסטים, שנכתבו על ידי חוקרים ויוצרים כאחת, פורשים את נושאי השיח והרעיונות המרכזיים בהיסטוריה, בתיאוריה ובביקורת של התרבות החזותית והחומרית. חלקם נוגעים בהיבטים של אסתטיקה וטכניקה, אחרים נוגעים בסוגיות של תרבות, מִגדר, מעמד, מקומיות, גלובליזציה, טכנולוגיה, יחסים בין ידע לכוח ועוד.
+                        </p>
+                       <br>
+                        <p>
+                            הטקסטים נבחרו על ידי צוותים שונים מן המחלקה לתרבות חזותית וחומרית בשיתוף עם מעצבים, אמנים ואדריכלים מן המחלקות המקצועיות בבצלאל והם מחולקים לפי המחלקות השונות: תקשורת חזותית, ארכיטקטורה, אמנות, צילום, עיצוב תעשייתי, אמנויות המסך, צורפות ואופנה, קראפט (כולל עיצוב קרמי וזכוכית). נוסף על אלו, יוצגו לקוראים טקסטים המתייחסים להיבטים רחבים של התרבות החזותית והחומרית תוך כוונה לספק מבט על המשותף לתחומי היצירה השונים.
+                        </p>
+                      <br>
+                        <p>
+                            הטקסטים נבחרו על סמך קריטריונים שונים: מקומם בקאנון של התחום, נושאי השיח העיקריים בכל תחום ידע, חשיבותם של הכותבים, מגוון הדעות (תוך הקפדה על איזון בין טקסטים היסטוריים לטקסטים עכשוויים) ומידת הקריאוּת של הטקסט. על הכותבים.ות נמנים תיאורטיקנים, היסטוריונים, אוצרים, מבקרי תרבות, אמנים, מעצבים, אדריכלים, מחנכים ועוד.
+                        </p>
+                        <br>
+                        <p>
+                            מטבע הדברים, מניין הטקסטים מוגבל ונע בין חמישה־עשר לעשרים טקסטים לכל מחלקה. הוספנו רשימה של טקסטים מומלצים ל"מטיבי לכת". מובן שהאסופות השונות אינן אלא מדגם חלקי של הקיים בכל אחד מן התחומים. עם זאת, הן מעמידות ייצוג רב־פנים של הדרכים המגוונות שבהן התייחסו כותבים שונים לַתחומים השונים של התרבות החזותית והחומרית.
+                        </p>
+                        <br>
+                        <p>
+                            תחת שם כל מחלקה תוכלו למצוא רשימת טקסטים, ביוגרפיה קצרה של הכותבים (בעברית) ותקצירי הטקסטים (גם הם בעברית). את הטקסטים עצמם ניתן לקבל בצורה דיגיטלית, או כעותק מודפס, במזכירות המחלקה לתרבות חזותית וחומרית.
+                        </p>
+                    </div>
+                </div>
+                <div class="half-column"></div>
+            </div>
+
+            <!-- mobile -->
+            <div class="half-page" id="small-text-mobile">
+                <div class="five-columns content-column-style">
+                    <div class="article-text" style="font-weight: 200;">
+                        <p>
+                            ההחלטה ללקט, לקבץ ולערוך את הטקסטים של תרבות חזותית וחומרית נבעה מסיבה פשוטה: במהלך השנים מצאנו עצמנו מתלבטים לגבי מהותם וזהותם של טקסטים שעוסקים בתחומי הדעת המגוונים הנלמדים בבצלאל ושאותם כדאי שהן הסטודנטים והן המרצים יכירו. כך, הטקסטים שנבחרו מנסים להנגיש לקהילה הבצלאלית מִדגם של טקסטים חשובים לכל דיסציפלינה. אלו יכולים להוות בסיס לבניית גוף־ידע אישי, כמו גם לעורר ולייצר דיונים בכיתה ובסטודיו.
+                        </p>
+                        <br>
+                        <p>
+                            הטקסטים, שנכתבו על ידי חוקרים ויוצרים כאחת, פורשים את נושאי השיח והרעיונות המרכזיים בהיסטוריה, בתיאוריה ובביקורת של התרבות החזותית והחומרית. חלקם נוגעים בהיבטים של אסתטיקה וטכניקה, אחרים נוגעים בסוגיות של תרבות, מִגדר, מעמד, מקומיות, גלובליזציה, טכנולוגיה, יחסים בין ידע לכוח ועוד.
+                        </p>
+                       <br>
+                        <p>
+                            הטקסטים נבחרו על ידי צוותים שונים מן המחלקה לתרבות חזותית וחומרית בשיתוף עם מעצבים, אמנים ואדריכלים מן המחלקות המקצועיות בבצלאל והם מחולקים לפי המחלקות השונות: תקשורת חזותית, ארכיטקטורה, אמנות, צילום, עיצוב תעשייתי, אמנויות המסך, צורפות ואופנה, קראפט (כולל עיצוב קרמי וזכוכית). נוסף על אלו, יוצגו לקוראים טקסטים המתייחסים להיבטים רחבים של התרבות החזותית והחומרית תוך כוונה לספק מבט על המשותף לתחומי היצירה השונים.
+                        </p>
+                      <br>
+                        <p>
+                            הטקסטים נבחרו על סמך קריטריונים שונים: מקומם בקאנון של התחום, נושאי השיח העיקריים בכל תחום ידע, חשיבותם של הכותבים, מגוון הדעות (תוך הקפדה על איזון בין טקסטים היסטוריים לטקסטים עכשוויים) ומידת הקריאוּת של הטקסט. על הכותבים.ות נמנים תיאורטיקנים, היסטוריונים, אוצרים, מבקרי תרבות, אמנים, מעצבים, אדריכלים, מחנכים ועוד.
+                        </p>
+                        <br>
+                        <p>
+                            מטבע הדברים, מניין הטקסטים מוגבל ונע בין חמישה־עשר לעשרים טקסטים לכל מחלקה. הוספנו רשימה של טקסטים מומלצים ל"מטיבי לכת". מובן שהאסופות השונות אינן אלא מדגם חלקי של הקיים בכל אחד מן התחומים. עם זאת, הן מעמידות ייצוג רב־פנים של הדרכים המגוונות שבהן התייחסו כותבים שונים לַתחומים השונים של התרבות החזותית והחומרית.
+                        </p>
+                    </div>
+                </div>
+                <div class="one-column"></div>
+            </div>
+
+
+             <!-- icons mobile -->
+             <div id="icons-mobile">
+                <div class="half-page icons-runner" style="width: 100%; overflow: hidden;">
+                    <div class="icons-runner-class" style="height: 300px; padding-right: 300px">
+                        <div class="icon-rotation grid-column">
+                            <img src="/imgs/icons/orange/articles-icon.svg" alt="Icon 1">
+                            <img src="/imgs/icons/orange/masses-icon.svg" alt="Icon 2">
+                            <img src="/imgs/icons/orange/lists-icon.svg" alt="Icon 3">
+                            <img src="/imgs/icons/orange/bids-icon.svg" alt="Icon 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer">
+        <!-- desktop -->
+        <div class="footer-note" id="footer-note-desk">
+            <div class="big-title" style="padding-right: 40px;">
+                <div class="all-rights-reserved" style="margin-bottom: -40px;">
+                    <img src="/imgs/BezalelLogo.png" style="height: 100%; width:180px;">
+                    כל הזכויות
+                </div>
+                <div class="half-page">
+                    <div class="all-rights-reserved" style="margin-top: -40px;">
+                        שמורות
+                    </div>
+                    <div class="half-page all-rights-reserved-icons" style="margin-top: -20px;">
+                        <div class="footer-menu-icon half-page" style="gap: 20px;">
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon">
+                                <a href=mailto:editor@bezalel.ac.il>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+             <!-- mobile -->
+             <div class="footer-note" id="footer-note-mobile">
+                <div class="big-title" style="gap: 0;">
+                    <div class="all-rights-reserved">
+                        <img src="/imgs/BezalelLogo.png" style="width: 100%; height: 100%; width:55px;">
+                        כל הזכויות
+                    </div>
+                    <div style="display:flex; flex-direction: row; gap: 0px;">
+                        <div class="all-rights-reserved">
+                            שמורות
+                        </div>
+                        <div class="half-page all-rights-reserved-icons">
+                            <div class="footer-menu-icon footer-menu-flex">
+                                <div class="icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="icon">
+                                    <a href=mailto:editor@bezalel.ac.il>
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+
+
+    
+</body>
+</html>

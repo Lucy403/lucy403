@@ -1,0 +1,965 @@
+*, *:before, *:after { 
+    box-sizing: border-box; /* Prevent padding from enlarging elements */
+    text-decoration: none;
+}
+
+* {
+    margin: 0; /* Remove extra margin from everything (body, headings, etc...) */
+}
+
+img {
+    max-width: 100%; /* Don't let images be more than their container's width */
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; /* Break long words in headings & paragraphs */
+}
+
+ul { /* Don't style unordered lists (good for nav menus!) */
+    padding: 0;
+    list-style: none;
+}
+
+a { /* No blue links! */
+    color: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+body {
+    font-family: narkiss-tam, sans-serif;
+    background-color: #475939;
+    color: #F2A2DD;
+}
+
+.site-wrapper {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #475939;
+    border: 2px solid #F2A2DD;
+    color: #F2A2DD;
+    
+}
+
+::selection {
+    background-color: #F25C05;
+    color: #475939;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icons-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.icons-menu ul {
+    display: flex; 
+}
+
+.icons-menu li {
+    align-items: center; 
+    justify-content: center;
+}
+
+.icons-menu-opening-act {
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+    padding: 0 40px;
+}
+
+.content-article {
+    background-color: #475939;
+    color: #F2A2DD;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.icons-menu img {
+    width: 85px;
+    height: 85px;
+}
+
+.small-menu {
+    display: flex;
+}
+
+.small-menu-mobile {
+    display: none;
+}
+
+.small-menu-items {
+    display: flex; 
+    flex-direction: column;
+}
+
+.small-menu-items li:hover {
+    background: #F25C05;
+}
+
+.big-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#big-title-mobile {
+    display: none;
+}
+
+#big-title-desk {
+    display: flex;
+}
+
+.big-title-grid {
+    display: flex;
+}
+
+.big-title-grid-gap {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+
+.big-title-1st-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.big-title-2nd-row {
+    justify-content: flex-end;
+    padding-left: 30px;
+    gap: 40px;
+}
+
+.big-title-3rd-row {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: #F25C05;
+    padding: 10px;
+    padding-right:30px;
+}
+
+#icon-hover {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-menu-icon {
+    color: #F2A2DD;
+    width: 100%;
+    height: 60%;
+    align-content: center;
+}
+
+.footer-note.big-title.half-page {
+    justify-content: center;
+}
+
+.icon {
+    border: 2px solid #F2A2DD;
+    border-radius: 500px;
+    width: 100%;
+    height: 100%;
+    width: 170px;
+    align-content: center;
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 10px;
+}
+
+/* 
+/* fonts */
+.running-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.big-title-font {
+    font-family: "NarkisRuttiMF", sans-serif;
+    font-size: 20vw;
+    text-align: center;
+    letter-spacing: -0.067em;
+    line-height: 0.85;
+}
+
+.about-big-font {
+    margin: 50px 0; 
+    padding: 0 50px; 
+    line-height: 10rem;
+    text-align: right;
+}
+
+.item-metadata {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2rem;
+    padding-top: 20px;
+}
+
+.item-running-text {
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.18rem;
+    word-spacing: .03rem;
+}
+
+.item-number {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+}
+
+.item-number-side-note {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+    margin-bottom: auto;
+}
+
+.talking-item {
+    background-color: #F25C05; 
+    padding: 0 50px; 
+    /* align-self: center; */
+}
+
+.talking-item > .side-note-intext {
+    background-color:#F2A2DD;
+    color:#F25C05;
+}
+
+.small-menu-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: .73em;
+    line-height: 1.6em;
+    letter-spacing: -.019em;
+}
+
+.articles-icon::after {
+    content: "\2736";
+    font-size: 10vw;
+   
+}
+
+.all-rights-reserved-icons {
+    width: 100%;
+    align-items: center;
+}
+
+
+.icons-runner-class > .articles-icon::after, .icons-runner-class >.masses-icon::after, .icons-runner-class >.lists-icon::after, .icons-runner-class >.bids-icon::after{
+    font-size: 46vw;
+}
+
+
+.masses-icon::after {
+    content: "\2738";
+    font-size: 10vw;
+}
+
+.lists-icon::after {
+    content: "\2739";
+    font-size: 10vw;
+}
+
+.bids-icon::after {
+    content: "\273A";
+    font-size: 10vw;
+}
+
+.translates-icon::after {
+    content: "\2734";
+    font-size: 10vw;
+}
+
+.star-icon::after {
+    content: "\2605";
+    font-size: 10vw;
+}
+
+.author-name {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 0.06rem;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.item-no {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#opening-text-mobile {
+    display: none;
+}
+
+#opening-text-medium {
+    display: none;
+}
+
+#opening-text {
+    display: flex;
+}
+
+#icons-runner {
+    display: flex;
+}
+
+#icons-runner-mobile {
+    display: none;
+}
+
+
+#page-content {
+    display: flex;
+}
+
+#page-content-mobile {
+    display: none;
+}
+
+#epilogue {
+    display: flex;
+}
+
+#epilogue-mobile {
+    display: none;
+}
+
+#bibliography {
+    display: flex;
+}
+
+.item-no + #bibliography {
+    background-color: #F25C05;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+#bibliography-mobile {
+    display: none;
+}
+
+.half-page {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+    padding-right:10px;
+}
+
+.grid-column {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.half-column {
+    width: 8.33%;
+}
+
+.one-column {
+    width: 16.667%;
+}
+
+.one-and-half-columns {
+    width: 24.997%;
+}
+
+.two-columns {
+    width: 33.33%;
+}
+
+.two-and-half-columns {
+    width: 41.66%;
+}
+
+.three-columns {
+    width: 50%;
+}
+
+.three-and-half-columns {
+    width: 58.33%;
+}
+
+.four-columns {
+    width: 66.667%;
+}
+
+.four-and-half-columns {
+    width: 74.997%;
+}
+
+.five-columns {
+    width: 83.327%;
+}
+
+.five-and-half-columns {
+    width: 91.657%;
+}
+
+.side-note-div {
+    gap: 20px; 
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.side-note-column {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px;
+}
+
+.paragraph-subtitle-div > .small {
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+
+.subtitle { 
+    border: solid 2px #F2A2DD;
+    border-radius: 500px;
+    width:50%;
+    padding: 30px;
+    margin: auto 0;
+    color:#F2A2DD;
+}
+
+.subtitle p {
+    font-size: clamp(20px, 3vw, 40px);
+    margin: auto;
+    /* line-height: 2rem; */
+}
+
+.big-metadata { 
+    align-self: center;
+    margin-bottom: auto;
+    font-size: clamp(20px, 3vw, 40px);
+    line-height: normal;
+}
+
+.big-metadata-icons { 
+    align-self: center;
+    /* margin-bottom: auto; */
+    font-size: clamp(20px, 3vw, 40px);
+    line-height: normal;
+}
+
+.side-note-mark {
+    text-align: center;
+    font-size: 6em;
+    padding-top: 50px;
+    width: 50%;
+    height: 100%;
+    background-color: #F25C05;
+}
+
+.side-note-intext {
+    background-color: #F25C05;
+    padding: 0 5px;
+    /* font-size: 0.5em; */
+}
+
+.grid-row p {
+    font-family: narkiss-tam, sans-serif; 
+    font-size: .6em;
+}
+
+.grid-row-number {
+    border: 2px solid #F2A2DD; 
+    border-radius: 100px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 2em;
+}
+
+.orange-background {
+    background-color: #F25C05;
+    color: #475939;
+    font-weight: 400;
+}
+
+.icon-text {
+    font-size: 2vw;
+}
+
+.article-text {
+    text-indent: 22px;
+    letter-spacing: .025em;
+    padding-left: 25px;
+}
+
+.bibliography {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+}
+
+.big-name {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px; 
+    line-height: 2.4rem;
+    width: 40%;
+    text-align: left;
+}
+
+.big-name-english {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px; 
+    line-height: 2.4rem;
+    width: 40%;
+    direction: ltr;
+}
+
+.bibliography-details {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+
+.bibliography-details-english {
+    width: 60%;
+    margin-bottom: 20px;
+    direction: ltr;
+}
+
+.bibliography-details a {
+    background-color: #475939;
+}
+
+.bibliography-details-english a {
+    background-color: #475939;
+}
+
+.footer-note {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.all-rights-reserved {
+    font-family: "NarkisRuttiMF", sans-serif;
+    font-size: 23vw;
+    letter-spacing: -0.067em;
+    padding: 10px;
+    line-height: 0.85;
+}
+
+#footer-note-desktop {
+    display: flex;
+}
+
+
+#footer-note-mobile {
+    display: none;
+}
+
+
+
+/* medium changes */
+@media screen and (max-width: 900px) {   
+
+    .all-rights-reserved {
+        font-size: 18vw;
+        line-height: normal;
+    }
+
+    .footer-menu-icon {
+        display: none;
+    }
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* mobile view */
+@media screen and (max-width: 860px) {
+    
+.site-wrapper {
+        background-color: #475939;
+        color: #F2A2DD;
+        margin: 0;
+}
+    
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.icons-menu ul {
+    display: flex;
+}
+
+.icons-menu-list {
+    justify-content: flex-end;
+}
+
+.icons-menu li {
+    align-items: center; 
+    justify-content: center;
+}
+
+.content-article {
+    background-color: #475939;
+    color: #F2A2DD;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-menu {
+    display: none;
+}
+
+.small-menu-mobile {
+    display: flex;
+    /* margin-top: 10px; */
+    /* height: 400px; */
+    /* padding-bottom: 130px; */
+    /* position: absolute; */
+    justify-content: flex-start;
+}
+
+.small-menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.small-menu-items li:hover {
+    background: #F25C05;
+}
+
+.big-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-title-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.big-title-grid-gap {
+    gap: 10px;
+}
+
+#big-title-mobile {
+    display: flex;
+}
+
+#big-title-desk {
+    display: none;
+}
+
+.big-title-1st-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+}
+
+.big-metadata { 
+    align-self: center;
+    margin-bottom: auto;
+    font-size: clamp(20px, 3vw, 40px);
+    line-height: normal;
+}
+
+.big-title-2nd-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    background-color: #F25C05;
+    margin: 0;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+    align-self: flex-end;
+}
+
+
+/* fonts */
+.running-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.big-title-font {
+    font-family: "NarkisRuttiMF", sans-serif;
+    text-align: center;
+    letter-spacing: -0.035em;
+    /* font-size: 5em; */
+}
+
+.item-metadata {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 1.2em;
+    line-height: 1rem;
+    padding-top: 20px;
+}
+
+.item-running-text {
+    font-size: .95rem;
+    font-weight: 300;
+    line-height: 1.18rem;
+    word-spacing: .03rem;
+}
+
+.item-number {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 3em;
+}
+
+.small-menu-text {
+    font-family: narkiss-tam, sans-serif;
+    font-size: .73em;
+    line-height: 1.2em;
+    letter-spacing: -.019em;
+}
+
+/* fonts */
+
+
+
+.author-name {
+    font-family: narkiss-tam, sans-serif;
+    letter-spacing: 0.06rem;
+    padding-left: 30px;
+    padding-right:10px;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.item-no {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px;
+    margin-bottom: 0px;
+}
+
+#opening-text-mobile {
+    display: flex;
+}
+
+#opening-text {
+    display: none;
+}
+
+#icons-runner {
+    display: none;
+}
+
+#icons-runner-mobile {
+    display: flex;
+}
+
+#page-content {
+    display: none;
+}
+
+#page-content-mobile {
+    display: flex;
+}
+
+#epilogue {
+    display: none;
+}
+
+#epilogue-mobile {
+    display: flex;
+}
+
+
+#bibliography {
+    display: none;
+}
+
+#bibliography-mobile {
+    display: flex;
+}
+
+.half-page {
+    display: flex; 
+    flex-direction: row;
+    gap: 5px;
+    padding-right:0px;
+}
+
+.grid-column {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+}
+
+.side-note-mark {
+    border-radius: 50%;
+    text-align: center;
+    font-size: 6em;
+    width: 50%;
+    height: 60%;
+    background-color: #F25C05;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row p {
+    font-family: narkiss-tam, sans-serif; 
+    font-size: .6em;
+}
+
+.grid-row-number {
+    border-radius: 100px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 10vw;
+}
+
+.orange-background {
+    background-color: #F25C05;
+    color: #475939;
+    font-weight: 400;
+}
+
+
+.big-name {
+    font-family: narkiss-tam, sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px; 
+    line-height: 2.4rem;
+    text-align: left;
+}
+
+#footer-note-desktop {
+    display: none;
+}
+
+#footer-note-mobile {
+    display: flex;
+}
+
+.icon {
+    border: 2px solid #F2A2DD;
+    border-radius: 500px;
+    width: 100%;
+    height: 100%;
+    width: 60px;
+    align-content: center;
+    text-align: center;
+    font-size: 1.9em;
+}
+
+.all-rights-reserved {
+    font-family: "NarkisRuttiMF", sans-serif;
+    font-size: 23vw;
+    letter-spacing: -0.048em;
+    padding: 0 10px;
+    line-height: 0.85;
+}
+
+.all-rights-reserved-icons {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-note {
+    margin-top: 20px;
+}
+
+.icons-menu-opening-act {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding: 0 20px;
+}
+
+
+.footer-menu-icon {
+    color: #F2A2DD;
+    width: 100%;
+    height: 60px;
+    align-content: center;
+}
+
+.footer-menu-flex {
+    display:flex; 
+    flex-direction: row; 
+    gap: 5px; 
+    width: 100%;
+}
+
+}

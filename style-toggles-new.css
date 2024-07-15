@@ -1,0 +1,378 @@
+.big-metadata-icons label {
+    display: inline-block;
+    position: relative;
+    width: 150px; /* Set the fixed width */
+    height: 150px; /* Set the fixed height */
+    border: 2px solid #F2A2DD; /* Border styling */
+    border-radius: 100px; /* Rounded border */
+    overflow: hidden;
+    cursor: pointer;
+    padding:0;
+    margin: 0;
+    transition: border-color 0.3s ease;
+
+}
+
+.big-metadata-icons label img {
+    width: 100%; /* Full width of the label container */
+    height: 150px; /* Maintain aspect ratio */
+    padding: 20px;
+}
+
+.big-metadata-icons label img.small {
+    transform: scale(0.15); 
+    position: absolute;
+    left: 40%;
+}
+
+
+.big-metadata-icons label.checked {
+    width: 250px;
+    border-radius: 100px;
+}
+
+/* toggles */
+/* toggle articles */
+input[type="checkbox"].toggle-articles, input[type="checkbox"].toggle-masses, input[type="checkbox"].toggle-lists, input[type="checkbox"].toggle-bids {
+    display: none;
+    cursor: pointer;
+}
+
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: space-evenly;
+    position: relative;
+    top: -8.5em;
+    padding-right:50px;
+    font-size: .85em;
+    display: none;
+    overflow: hidden;
+    max-width: 0;
+}
+
+.list-content.active {
+    display: block;
+    max-width: 100%;
+}
+
+input[type="checkbox"].toggle-articles:checked ~ .list-content, input[type="checkbox"].toggle-masses:checked ~ .list-content, input[type="checkbox"].toggle-lists:checked ~ .list-content, input[type="checkbox"].toggle-bids:checked ~ .list-content {
+    display: block;
+}
+
+.list-content p {
+    margin: 0;
+    margin-bottom: 7px;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    font-family: narkiss-tam, sans-serif;
+    letter-spacing: normal;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.list-content p > span {
+    font-size: 1rem;
+}
+
+.list-content span {
+    background-color: #F25C05; 
+    font-weight: 400;
+}
+
+.hidden {
+    display: none;
+}
+
+.big-metadata-icons label:hover {
+    border-color: #F25C05;
+}
+
+.big-metadata-icons label:hover img {
+    /* filter: brightness(0) saturate(100%) invert(30%) sepia(19%) saturate(800%) hue-rotate(51deg) brightness(95%) contrast(86%);  */
+    /* color green */
+
+
+    filter: brightness(0) saturate(100%) invert(44%) sepia(88%) saturate(3619%) hue-rotate(2deg) brightness(98%) contrast(96%); 
+    /* color orange */
+    
+}
+
+.big-metadata-icons .toggle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    color: #F25C05;
+    pointer-events: none;
+    font-size: clamp(20px, 3vw, 40px);
+    line-height: normal;
+}
+
+.big-metadata-icons label:hover .toggle-text {
+    opacity: 1;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (max-width: 860px) {
+    .big-metadata-icons label {
+        display: inline-block;
+        position: relative;
+        width: 80px; /* Set the fixed width */
+        height: 80px; /* Set the fixed height */
+        border: 2px solid #F2A2DD; /* Border styling */
+        border-radius: 100px; /* Rounded border */
+        overflow: hidden; /* Ensure content does not overflow */
+        cursor: pointer;
+        padding:0;
+        margin: 0;
+        transition: border-color 0.3s ease;
+    
+    }
+    
+    .big-metadata-icons label img {
+        width: 100%; /* Full width of the label container */
+        height: 80px; /* Maintain aspect ratio */
+        padding: 10px;
+    }
+    
+    
+    .big-metadata-icons label.checked {
+        height: 120px;
+        width: 80px;
+        border-radius: 100px;
+    }
+    
+    /* toggles */
+    /* toggle articles */
+    input[type="checkbox"].toggle-articles, input[type="checkbox"].toggle-masses, input[type="checkbox"].toggle-lists, input[type="checkbox"].toggle-bids {
+        display: none;
+        cursor: pointer;
+    }
+
+  
+    .big-metadata-icons label:hover {
+        border-color: #F25C05; /* Change border color on hover */
+    }
+    
+    .big-metadata-icons label:hover img {
+        filter: brightness(0) saturate(100%) invert(30%) sepia(19%) saturate(800%) hue-rotate(51deg) brightness(95%) contrast(86%);
+    }
+    
+    .big-metadata-icons .toggle-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        color: #F25C05;
+        pointer-events: none;
+        font-size: .9rem;
+        line-height: normal;
+    }
+
+    .list-content {
+        display: none;
+        position: absolute;
+        top: 33px;
+        border-radius: 11px;
+        padding: 10px;
+        margin-right: 10px;
+        max-width: 300px; 
+        overflow: hidden;
+        z-index: 100;
+        white-space: normal; 
+        width: 60px;
+        height: 90px; 
+        border: 2px solid transparent;
+        background-color: #475939;
+        cursor: pointer;
+        padding:0;
+        margin-top: 11px;
+    }
+
+    .list-content p {
+        margin: 5px 5px;
+        text-align: right;
+        font-family: narkiss-tam, sans-serif;
+        letter-spacing: normal;
+        font-size: inherit;
+        line-height: .6rem;
+        font-size: 0.5rem;
+    }
+    
+    .list-content p > span {
+        font-size: 0.5rem;
+    }
+    
+    .list-content span {
+        background-color: #F25C05; 
+        font-weight: 400;
+    }
+
+    .big-metadata-icons .icon-container {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .big-metadata-icons .toggle-text {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .big-metadata-icons label.checked .toggle-text {
+        opacity: 1;
+    } 
+
+    .list-content.active {
+        display: block;
+    }
+
+    .list-content.hidden {
+        display: none;
+    }
+
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (max-width: 390px) {
+    .big-metadata-icons label {
+        display: inline-block;
+        position: relative;
+        width: 80px; /* Set the fixed width */
+        height: 80px; /* Set the fixed height */
+        border: 2px solid #F2A2DD; /* Border styling */
+        border-radius: 100px; /* Rounded border */
+        overflow: hidden; /* Ensure content does not overflow */
+        cursor: pointer;
+        padding:0;
+        margin: 0;
+        transition: border-color 0.3s ease;
+    
+    }
+    
+    .big-metadata-icons label img {
+        width: 100%; /* Full width of the label container */
+        height: 80px; /* Maintain aspect ratio */
+        padding: 10px;
+    }
+    
+    
+    .big-metadata-icons label.checked {
+        height: 120px;
+        width: 80px;
+        border-radius: 100px;
+    }
+    
+    /* toggles */
+    /* toggle articles */
+    input[type="checkbox"].toggle-articles, input[type="checkbox"].toggle-masses, input[type="checkbox"].toggle-lists, input[type="checkbox"].toggle-bids {
+        display: none;
+        cursor: pointer;
+    }
+
+  
+    .big-metadata-icons label:hover {
+        border-color: #F25C05; /* Change border color on hover */
+    }
+    
+    .big-metadata-icons label:hover img {
+        filter: brightness(0) saturate(100%) invert(30%) sepia(19%) saturate(800%) hue-rotate(51deg) brightness(95%) contrast(86%);
+    }
+    
+    .big-metadata-icons .toggle-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center;
+        color: #F25C05;
+        pointer-events: none;
+        font-size: .9rem;
+        line-height: normal;
+    }
+
+    .list-content {
+        display: none;
+        position: absolute;
+        top: 10.5px;
+        border-radius: 11px;
+        padding: 10px;
+        margin-right: 10px;
+        max-width: 300px; 
+        overflow: hidden;
+        z-index: 100;
+        white-space: normal; 
+        width: 60px;
+        height: 90px; 
+        border: 2px solid transparent;
+        background-color: #475939;
+        cursor: pointer;
+        padding:0;
+        margin-top: 11px;
+    }
+
+    .list-content p {
+        margin: 5px 5px;
+        text-align: right;
+        font-family: narkiss-tam, sans-serif;
+        letter-spacing: normal;
+        font-size: inherit;
+        line-height: .6rem;
+        font-size: 0.5rem;
+    }
+    
+    .list-content p > span {
+        font-size: 0.5rem;
+    }
+    
+    .list-content span {
+        background-color: #F25C05; 
+        font-weight: 400;
+    }
+
+    .big-metadata-icons .icon-container {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .big-metadata-icons .toggle-text {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .big-metadata-icons label.checked .toggle-text {
+        opacity: 1;
+    } 
+
+    .list-content.active {
+        display: block;
+    }
+
+    .list-content.hidden {
+        display: none;
+    }
+
+}
+

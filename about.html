@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות</title>
+    <link rel="stylesheet" href="style-about.css">
+    <link rel="stylesheet" href="style-toggles-new.css">
+    <link rel="stylesheet" href="rotation-animation.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qut3tib.css">
+    <link rel="shortcut icon" href="/imgs/star.svg" type="image/x-icon">
+    <script src="/script-new.js" defer></script>
+    <script src="https://kit.fontawesome.com/932708ed47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <div class="header">
+            <div class="icons-menu">
+                <div class="small-menu small-menu-text">
+                    <ul class="small-menu-items">
+                        <li>
+                            <a href="/about.html">
+                                אודות
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                כניסה לגיליון
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/past-volumes.html">
+                                גליונות קודמים
+                            </a>
+                        </li>
+                        <li>התקנת מאמר</li>
+                        <li>
+                            הפרוטוקולים
+                        </li>
+                        <li>
+                            <a href="/yalkut.html">
+                                הילקוט
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="icons-menu-list big-metadata-icons">
+                    <li id="index-articles">
+                        <input type="checkbox" id="check-articles" class="toggle-articles">
+                        <label for="check-articles">
+                            <div>
+                                <img src="imgs/icons/pink/articles-icon.svg">
+                            </div>
+                            <span class="toggle-text">מאמרים</span>
+                        </label>
+                        <div id="article-index-articles" class="list-content hidden">
+                            <p>
+                                <a href="/article-turn-off-the-lights.html">
+                                    שהאחרון יכבה את האור
+                                </a>
+                            </p>
+                            <p>
+                                <span>עידן פוקס טל בן צבי</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li id="index-masses">
+                        <input type="checkbox" id="check-masses" class="toggle-masses">
+                        <label for="check-masses">
+                            <div>
+                                <img src="imgs/icons/pink/masses-icon.svg">
+                            </div>
+                            <span class="toggle-text">מסות</span>
+                        </label>
+                        <div id="article-index-masses" class="list-content hidden">
+                            <div>
+                                <p>
+                                    הדרך
+                                 </p>
+                                <p>
+                                    <span>גלילי שחר</span>
+                                </p>
+                            </div>
+                           <div>
+                            <p>
+                                <a href="/prefabricated-structure.html">
+                                    מבנה טרומי
+                                </a>
+                            </p>
+                            <p>
+                                <span>ידידיה גזבר</span>
+                            </p>
+                           </div>
+                        </div>
+                    </li>
+                    <li id="index-lists">
+                        <input type="checkbox" id="check-lists" class="toggle-lists">
+                        <label for="check-lists">
+                            <div>
+                                <img src="imgs/icons/pink/lists-icon.svg">
+                            </div>
+                            <span class="toggle-text">רשימות</span>
+                        </label>
+                        <div id="article-index-lists" class="hidden list-content">
+                            <div>
+                                <p>
+                                    <a href="/list-police.html">
+                                        משטרת ישר-אל הלב
+                                    </a>
+                                </p>
+                                <p>
+                                    <span>
+                                        השוטרת אז-אולי
+                                    </span>  
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    נצרת, עיר הבשורה
+                                </p>
+                                <p>
+                                    <span>
+                                        ח׳ולוד אבו אחמד
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="index-bids">
+                        <input type="checkbox" id="check-bids" class="toggle-bids">
+                        <label for="check-bids">
+                            <div>
+                                <img src="imgs/icons/pink/bids-icon.svg">
+                            </div>
+                            <span class="toggle-text">בדיונות</span>
+                        </label>
+                        <div id="article-index-bids" class="hidden list-content">
+                            <div>
+                                <p>
+                                    <a href="bid.html">
+                                        בדיוניום
+                                    </a>
+                                </p>
+                                <p>
+                                    <span>שמעון אדף</span>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <div class="small-menu-mobile small-menu-text">
+                    <ul class="small-menu-items">
+                        <li>
+                            <a href="/about.html">
+                                אודות
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/index.html">
+                                כניסה לגיליון
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/past-volumes.html">
+                                גליונות קודמים
+                            </a>
+                        </li>
+                        <li>התקנת מאמר</li>
+                        <li>הפרוטוקולים</li>
+                        <li>
+                            <a href="/yalkut.html">
+                                הילקוט
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <!-- title -->
+             <!-- desktop -->
+            <div class="item-big-title" id="item-big-title-desk">
+                <div class="item-big-title-font">
+                   אודות
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 30px; justify-content: center;">
+                    <div class="metadata">
+                        <div>
+                            עורך ראשי:
+                        </div>
+                        <div>
+                            אהד זהבי
+                        </div>
+                    </div>
+                    <div class="item-big-title-font" style="margin-top: -50px; margin-bottom: -60px">
+                        כתב עת
+                    </div>
+                </div>
+                
+                <div style="display: flex; flex-direction: row; gap: 30px; margin: 20px 20px;">
+                    <div class="item-big-title-font"> 
+                        לתרבות
+                    </div>
+                    <div class="metadata" style="text-align: right; justify-content: center; padding-left: 40px; padding-top: 10px;">
+                        <div>
+                            מערכת: חוסני אלח׳טיב שחאדה, 
+                            תמר ברגר, דור גז, אורנה גרנות,גל הרץ, דליה מרקוביץ',
+                          אורי סוכרי, 
+                           חגית קיסר
+                        </div>
+                    </div>
+                 
+                </div>
+                <div class="item-big-title-font" style="margin-top: -70px;">
+                    חזותית 
+                    <!-- וחומרית -->
+                </div>
+                <div class="item-big-title-font" style="margin-top: -65px;">
+                    וחומרית
+                </div>
+
+
+                <div class="half-page">
+                    <div class="three-and-half-columns"></div>
+                    <div class="one-and-half-columns">
+                        <div class="article-text">
+                            כתב עת אקדמי שמוציאה המחלקה לתרבות חזותית וחומרית, בצלאל אקדמיה לאמנות ועיצוב ירושלים. זהו כתב עת מקוון המפרסם שני גיליונות בשנה. החיבורים המתפרסמים בכתב העת משקיפים בביקורתיות וביצירתיות על התרבות החזותית והחומרית במרחב הזה ובעת הזאת.
+                        </div>
+                    </div>
+                    <div class="one-column"></div>
+                </div>
+            </div>
+
+            <!-- mobile -->
+            <div class="item-big-title" id="item-big-title-mobile">
+                <div class="item-big-title-font">
+                   אודות
+                </div>
+                <div class="metadata" style="display: flex; flex-direction: row; text-align: right; justify-content: center; gap: 15px;">
+                    <div class="one-column"></div>
+                    <div class="one-column">
+                        <div class="metadata">
+                            <div>
+                                עורך ראשי:
+                            </div>
+                            <div>
+                                אהד זהבי
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three-columns">
+                        מערכת: חוסני אלח׳טיב שחאדה, 
+                        תמר ברגר, דור גז, אורנה גרנות,גל הרץ, דליה מרקוביץ',
+                      אורי סוכרי, 
+                       חגית קיסר
+                    </div>
+                    <div class="one-column"></div>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 30px; justify-content: center;">
+                    <div class="item-big-title-font">
+                        כתב עת
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 15px; margin: 0px 20px;">
+                    <div class="item-big-title-font"> 
+                        לתרבות
+                    </div>
+                </div>
+                <div class="item-big-title-font">
+                    חזותית וחומרית
+                </div>
+
+
+                <div class="half-page">
+                    <div class="two-columns"></div>
+                    <div class="three-and-half-columns">
+                        <div class="article-text">
+                            כתב עת אקדמי שמוציאה המחלקה לתרבות חזותית וחומרית, בצלאל אקדמיה לאמנות ועיצוב ירושלים. זהו כתב עת מקוון המפרסם שני גיליונות בשנה. החיבורים המתפרסמים בכתב העת משקיפים בביקורתיות וביצירתיות על התרבות החזותית והחומרית במרחב הזה ובעת הזאת.
+                        </div>
+                    </div>
+                    <div class="half-column"></div>
+                </div>
+            </div>
+
+<!-- kol kore -->
+ <!-- desktop -->
+            <div class="item-no item-no-kolkore" id="kolkore">
+                <div class="half-page" style="height: 200px;">
+                    <div class="grid-column half-column"></div>
+                    <div class="grid-column four-columns">
+                        <div class="item-big-title-font">
+                            קול קורא
+                        </div>
+                    </div>
+                    <div class="one-column">
+                       
+                    </div>
+                    <div class="grid-column half-column"></div>
+                </div>
+                <div class="half-page" style="margin-top: 100px;">
+                    <div class="two-columns"></div>
+                    <div class="grid-column three-and-half-columns" style="gap: 20px;">
+                        <div class="bibliography">
+                            <div class="big-name three-columns">
+                            </div>
+                            <div class="bibliography-details three-columns">
+                                <div style="text-indent: 22px; letter-spacing: .073em;">
+                                    ברוח המחשבה והעשייה של בצלאל אקדמיה לאמנות ועיצוב ירושלים אנחנו מזמינות ומזמינים כתבי יד שמשקיפים בביקורתיות וביצירתיות על התרבות החזותית והחומרית במרחב הזה ובעת הזאת. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bibliography">
+                            <div class="big-name">
+                                בפרט אנחנו מבקשים לעודד מבעים משולי השיח ולשמש במה לפעולות ספקולטיביות, פרפורמטיביות וניסיוניות.
+                            </div>
+                        </div>
+                        <div class="bibliography">
+                            <div class="big-name">
+                                ---
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half-column"></div>
+                </div>
+
+                <div class="half-page">
+                    <div class="half-column"></div>
+                    <div class="grid-column five-columns">
+                        <div>
+                            <div>
+                                    מחברות ומחברים מוזמנים לשלוח כתבי יד לארבעה מדורים לפי ההנחיות האלה:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half-column"></div>
+                </div>
+    
+                <div class="half-page icons-runner" style="padding-top: 20px;">
+                    <div class="icons-runner-class three-columns" style="overflow: hidden; height: 250px; margin-top: -50px;">
+                        <div>
+                            <a class="icon-rotation grid-column" href="/article-turn-off-the-lights.html">
+                                <img src="/imgs/icons/green/articles-icon.svg">
+                                <span class="icon-text">מאמרים</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="two-columns" style="color:#475939">
+                         <p class="article-text">
+                            בהיקף 7,000-5,000 מילה. יתקבלו לפרסום במדור זה מאמרים ביקורתיים ופורצי דרך שמתווים אפיקים חדשים למחשבה ולמבט. כל המאמרים שיתפרסמו במדור זה יעברו שיפוט עמיתות ועמיתים (peer review). 'בצלאל' הוא כתב עת שפיט ומספרו (ISSN) הוא 2707-3610.
+                         </p>
+                    </div>
+                    <div class="one-column"></div>
+                </div>
+
+                <div class="half-page icons-runner" style="padding-top: 20px;">
+                    <div class="icons-runner-class three-columns" style="overflow: hidden; height: 250px; margin-top: -50px;">
+                        <div>
+                            <a class="icon-rotation grid-column" href="/prefabricated-structure.html">
+                                <img src="/imgs/icons/green/masses-icon.svg">
+                                <span class="icon-text">מסות</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="two-columns" style="color:#475939">
+                         <p class="article-text">
+                            בהיקף 4,000-2,000 מילה. יתקבלו לפרסום במדור זה מאמרים קצרים, מסות אישיות וחיבורים מסוגים שונים שיציעו מבטים מקוריים על תופעות חשובות בתרבות החזותית והחומרית ומחשבות מאתגרות על עצם מעשה הכתיבה בתרבות רב-גונית.
+                         </p>
+                    </div>
+                    <div class="one-column"></div>
+                </div>
+
+
+                <div class="half-page icons-runner" style="padding-top: 20px;">
+                    <div class="icons-runner-class three-columns" style="overflow: hidden; height: 250px; margin-top: -50px;">
+                        <div>
+                            <a class="icon-rotation grid-column" href="/list-police.html">
+                                <img src="/imgs/icons/green/lists-icon.svg">
+                                <span class="icon-text">רשימות</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="two-columns" style="color:#475939">
+                        <p class="article-text">
+                            בהיקף 2,000-1,000 מילה. יתקבלו לפרסום במדור זה רשימות ביקורת על ספר, על יצירה או על תופעה, רשמים תרבותיים מהשוליים, מניפסטים מקוריים, ניתוחי אובייקט וכיוצא בזה.
+                        </p>
+                    </div>
+                    <div class="one-column"></div>
+                </div>
+
+                <div class="half-page icons-runner" style="padding-top: 20px;">
+                    <div class="icons-runner-class three-columns" style="overflow: hidden; height: 250px; margin-top: -50px;">
+                        <div>
+                            <a class="icon-rotation grid-column" href="/bid.html">
+                                <img src="/imgs/icons/green/bids-icon.svg">
+                                <span class="icon-text">בדיונות</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="two-columns" style="color:#475939">
+                         <p class="article-text">
+                            יתקבלו לפרסום במדור זה מבעים מילוליים וחזותיים כגון מסות חזותיות, חיבורים ניסיוניים, סיפורים גרפיים קצרים, קולאז'ים וכרזות בעלי ממדים ספקולטיביים, פרפורמטיביים, משחקיים, עתידניים או מיתולוגיים שימציאו דרכים לפריצתם של גבולות המחשבה ולהצמחת ידע מתוך הדמיון היוצר.
+                         </p>
+                    </div>
+                    <div class="one-column"></div>
+                </div>
+            </div>
+
+<!-- mobile -->
+            <div class="item-no" id="kolkore-mobile">
+                <div class="half-page" style="height: 150px;">
+                    <div class="four-columns content-column-style">
+                        <div class="item-big-title-font">
+                            קול קורא
+                        </div>
+                    </div>
+                    <div class="two-columns"></div>
+                </div>
+                <div class="half-page">
+                    <div class="two-and-half-columns"></div>
+                    <div class="three-columns">
+                        <div class="bibliography">
+                            <div class="article-text">
+                                ברוח המחשבה והעשייה של בצלאל אקדמיה לאמנות ועיצוב ירושלים אנחנו מזמינות ומזמינים כתבי יד שמשקיפים בביקורתיות וביצירתיות על התרבות החזותית והחומרית במרחב הזה ובעת הזאת. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half-column"></div>
+                </div>
+                <div class="half-page">
+                    <div class="half-column"></div>
+                    <div class="three-and-half-columns">
+                        <div class="big-name">
+                            בפרט אנחנו מבקשים לעודד מבעים משולי השיח ולשמש במה לפעולות ספקולטיביות, פרפורמטיביות וניסיוניות.
+                        </div>
+                    </div>
+                    <div class="two-columns"></div>
+                </div>
+                <div class="half-page">
+                    <div class="half-column"></div>
+                    <div class="grid-column five-columns article-text">
+                        <div>
+                            <div>
+                                מחברות ומחברים מוזמנים לשלוח כתבי יד לארבעה מדורים לפי ההנחיות האלה:
+                            </div>
+                        </div>
+                    </div>
+                    <div class="half-column"></div>
+                </div>
+    
+                <!-- icons -->
+                <div class="half-page icons-runner" style="margin-bottom: 0;">
+                    <div class="three-columns content-column-style" style="color:#475939">
+                        <p class="article-text">
+                           <span class="big-name">מאמרים</span>
+                           בהיקף 7,000-5,000 מילה. יתקבלו לפרסום במדור זה מאמרים ביקורתיים ופורצי דרך שמתווים אפיקים חדשים למחשבה ולמבט. כל המאמרים שיתפרסמו במדור זה יעברו שיפוט עמיתות ועמיתים (peer review). 'בצלאל' הוא כתב עת שפיט ומספרו (ISSN) הוא 2707-3610.
+                        </p>
+                   </div>
+                    <div class="icons-runner-class three-columns" style=" height: 300px; margin-top: -20px;">
+                        <div style="padding-right: 150px;">
+                            <a class="icon-rotation grid-column" href="/article-turn-off-the-lights.html">
+                                <img src="/imgs/icons/green/articles-icon.svg">
+                                <span class="icon-text">מאמרים</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-page icons-runner" style="margin-bottom: 0;">
+                    <div class="icons-runner-class three-columns" style=" height: 300px; margin-top: -20px;">
+                        <div style="padding-left: 150px;">
+                            <a class="icon-rotation grid-column" href="/article-turn-off-the-lights.html">
+                                <img src="/imgs/icons/green/masses-icon.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="three-columns content-column-style" style="color:#475939">
+                        <p class="article-text">
+                           <span class="big-name">מסות</span>
+                           בהיקף 4,000-2,000 מילה. יתקבלו לפרסום במדור זה מאמרים קצרים, מסות אישיות וחיבורים מסוגים שונים שיציעו מבטים מקוריים על תופעות חשובות בתרבות החזותית והחומרית ומחשבות מאתגרות על עצם מעשה הכתיבה בתרבות רב-גונית.
+                        </p>
+                   </div>
+                    
+                </div>
+                <div class="half-page icons-runner" style="margin-bottom: 0;">
+                    <div class="three-columns content-column-style" style="color:#475939">
+                        <p class="article-text">
+                           <span class="big-name">רשימות</span>
+                           בהיקף 2,000-1,000 מילה. יתקבלו לפרסום במדור זה רשימות ביקורת על ספר, על יצירה או על תופעה, רשמים תרבותיים מהשוליים, מניפסטים מקוריים, ניתוחי אובייקט וכיוצא בזה.
+                        </p>
+                   </div>
+                    <div class="icons-runner-class three-columns" style=" height: 300px; margin-top: -20px;">
+                        <div style="padding-right: 150px;">
+                            <a class="icon-rotation grid-column" href="/article-turn-off-the-lights.html">
+                                <img src="/imgs/icons/green/lists-icon.svg">
+                                <span class="icon-text">מאמרים</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-page icons-runner" style="margin-bottom: 0;">
+                    <div class="icons-runner-class three-columns" style=" height: 300px; margin-top: -20px;">
+                        <div style="padding-left: 150px;">
+                            <a class="icon-rotation grid-column" href="/article-turn-off-the-lights.html">
+                                <img src="/imgs/icons/green/bids-icon.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="three-columns content-column-style" style="color:#475939">
+                        <p class="article-text">
+                           <span class="big-name">בדיונות</span>
+                           יתקבלו לפרסום במדור זה מבעים מילוליים וחזותיים כגון מסות חזותיות, חיבורים ניסיוניים, סיפורים גרפיים קצרים, קולאז'ים וכרזות בעלי ממדים ספקולטיביים, פרפורמטיביים, משחקיים, עתידניים או מיתולוגיים שימציאו דרכים לפריצתם של גבולות המחשבה ולהצמחת ידע מתוך הדמיון היוצר.
+                        </p>
+                   </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <!-- footer note -->
+         <!-- desktop -->
+         <div class="footer-note" id="footer-note-desk">
+            <div class="big-title" style="padding-right: 40px;">
+                <div class="all-rights-reserved" style="margin-bottom: -40px;">
+                    <img src="/imgs/BezalelLogo.png" style="height: 100%; width:180px;">
+                    כל הזכויות
+                </div>
+                <div class="half-page">
+                    <div class="all-rights-reserved" style="margin-top: -40px;">
+                        שמורות
+                    </div>
+                    <div class="half-page all-rights-reserved-icons" style="margin-top: -20px;">
+                        <div class="footer-menu-icon half-page" style="gap: 20px;">
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon">
+                                <a href=mailto:editor@bezalel.ac.il>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="footer-note" id="footer-note-mobile">
+            <div class="big-title" style="gap: 0;">
+                <div class="all-rights-reserved">
+                    <img src="/imgs/BezalelLogo.png" style="width: 100%; height: 100%; width:55px;">
+                    כל הזכויות
+                </div>
+                <div style="display:flex; flex-direction: row; gap: 0px;">
+                    <div class="all-rights-reserved">
+                        שמורות
+                    </div>
+                    <div class="half-page all-rights-reserved-icons">
+                        <div class="footer-menu-icon footer-menu-flex">
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icon">
+                                <a href=mailto:editor@bezalel.ac.il>
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
